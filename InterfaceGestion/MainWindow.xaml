@@ -1,0 +1,34 @@
+﻿<Window x:Class="InterfaceGestion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfaceGestion"
+        mc:Ignorable="d"
+        Title="Interface de gestion" Height="450" Width="800"
+        MinHeight="450" MinWidth="800">
+    <Grid x:Name="GridGestion">
+	    <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\cycro\Desktop\C#pj\Usineb.png" Stretch="UniformToFill" Opacity="0.5"/>
+	    </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.33*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.33*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Chemindacces" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Chemin d'accès : " FontWeight="Bold" Background="Transparent" Foreground="Black" Margin="10, 10, 10, 10"></TextBlock>
+	    <TextBlock x:Name="Couleurdefond" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Couleur de fond : " FontWeight="Bold" Background="Transparent" Foreground="Black" Margin="10, 10, 10, 10"></TextBlock>
+	    <TextBox Margin="10, 50, 10, 50" BorderThickness="0" BorderBrush="Transparent" Name="FieldCheminacces" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" AcceptsReturn="True" FontWeight="Bold" VerticalContentAlignment="Center"/>
+	    <TextBox Margin="10, 50, 10, 50" BorderThickness="0" BorderBrush="Transparent" Name="FieldCouleurdefond" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" AcceptsReturn="True" FontWeight="Bold" VerticalContentAlignment="Center"/>
+        <Button x:Name="Btterminer" Content="Terminer" Background="#808b96" Foreground="Black" Grid.Column="1" Grid.Row="3" Margin="15"></Button>
+    </Grid>
+</Window>
